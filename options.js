@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Save API key when button is clicked
     document.getElementById("save-button").addEventListener("click", () => {
         const apiKey = document.getElementById("api-key").value.trim();
+        
 
         if (apiKey) {
             chrome.storage.sync.set({ geminiApiKey: apiKey }, () => {
